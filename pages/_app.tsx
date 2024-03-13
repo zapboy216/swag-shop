@@ -3,7 +3,7 @@ import { AppProps } from "next/app";
 import Script from "next/script";
 import { NextPage } from "next";
 
-import { GetListResponse, GitHubBanner, Refine } from "@refinedev/core";
+import { GetListResponse, Refine } from "@refinedev/core";
 import routerProvider from "@refinedev/nextjs-router/pages";
 import dataProvider, { authProvider } from "@refinedev/medusa";
 import NextNProgress from "nextjs-progressbar";
@@ -47,7 +47,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
 
   return (
     <ManagedUIContext>
-      <GitHubBanner />
+      
       <Refine
         routerProvider={routerProvider}
         dataProvider={dataProvider(PROXY_URL)}
