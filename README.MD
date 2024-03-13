@@ -70,7 +70,7 @@ npm create refine-app@latest -- --example store
 Go to the project directory.
 
 ```bash
-npm run dev
+npm start
 ```
 
 ## Resources
